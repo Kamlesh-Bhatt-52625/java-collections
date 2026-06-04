@@ -25,5 +25,34 @@ public class learn {
 
         System.out.println("Popped element: " + stack.pop());
         System.out.println(stack);
+
+        // * Checking if the stack is empty
+        System.out.println("Is the stack empty? " + stack.isEmpty());
+
+        // * Getting the size of the stack
+        System.out.println("The size of the stack is: " + stack.size());
+
+        // * using one of the core methods of stack to check if it contains a specific element
+        System.out.println("Does the stack contain 12? " + stack.contains(12));
+
+        // * Clearing the stack
+        stack.clear();
+        System.out.println("The stack after clearing: " + stack);
+
+        // * Checking if the stack is empty after clearing
+        System.out.println("Is the stack empty after clearing? " + stack.isEmpty());
+
+        // * using push pop and peek methods in a loop to demonstrate the LIFO behavior of the stack
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+        System.out.println("Stack after pushing elements: " + stack);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Peeked element: " + stack.peek());
+            System.out.println("Popped element: " + stack.pop());
+        }
+
     }
 }
