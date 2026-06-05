@@ -21,5 +21,18 @@ public class LinkedListQueue {
         int removed = queue.poll();
         System.out.println(removed); // Output: 1
         System.out.println(queue); // Output: [2, 3]
+
+        // ! There are 3 additional methods that can be used with a queue:
+        // ! 1. add() - Similar to offer(), but throws an exception if the queue is full
+        // ! 2. remove() - Similar to poll(), but throws an exception if the queue is empty
+        // ! 3. element() - Similar to peek(), but throws an exception if the queue is empty
+
+        queue.add(4);
+        System.out.println(queue); // Output: [2, 3, 4] 
+        int removedElement = queue.remove();
+        System.out.println(removedElement); // Output: 2
+        System.out.println(queue); // Output: [3, 4]
+        queue.element(); // Output: 3
+        System.out.println(queue); // Output: [3, 4]
     }
 }
